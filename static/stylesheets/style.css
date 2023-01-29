@@ -1,0 +1,55 @@
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(49,252,161,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.h2class {
+    font-family: 'Times New Roman', serif;
+    font-size: 70px; 
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-style: solid;
+}
+
+img {
+    border: 5px solid #555;
+}
+
+.row {
+    display: flex;
+  }
+  
+.column {
+    width: 25%;
+    padding: 5px;
+  }
+
+.col2 {
+width: 50%;
+padding: 5px;
+}
+
+.choose {
+    font-family: 'Garamond', serif;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+/* HIDE RADIO */
+[type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    }
+  
+    /* IMAGE STYLES */
+    [type=radio] + img {
+    cursor: pointer;
+    }
+  
+    /* CHECKED STYLES */
+    [type=radio]:checked + img {
+    outline: 2px solid #f00;
+    }

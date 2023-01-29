@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Style transfer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <h2 class="h2class">STYLE TRANSFER</h2>
+
+  <div class="container-fluid bg-3 text-center">
+
+    <form action="/processed" method="post" enctype="multipart/form-data">
+
+      <h3 class="choose">Please select a style image</h3><br>
+      <div class="row">
+        <div class="column">
+          <label>
+            <input type="radio" name="style" value="1" checked>
+            <img src="../static/image/s1.jpg" alt="Option 1" width="320" height="230">
+          </label>
+        </div>
+        <div class="column">
+          <label>
+            <input type="radio" name="style" value="2">
+            <img src="../static/image/s2.jpg" alt="Option 2" width="320" height="230">
+          </label>
+        </div>
+        <div class="column">
+          <label>
+            <input type="radio" name="style" value="3">
+            <img src="../static/image/s3.jpg" alt="Option 3" width="320" height="230">
+          </label>
+        </div>
+        <div class="column">
+          <label>
+            <input type="radio" name="style" value="4">
+            <img src="../static/image/s4.jpg" alt="Option 4" width="320" height="230">
+          </label>
+        </div>
+      </div>
+  </div>
+  <br />
+  <br /><br />
+
+  <div class="row">
+    <div class="col-sm-4">
+    </div>
+    <div class="col-sm-8">
+
+
+      <span class="btn btn-default btn-file">
+        <input type="file" name="file" required>
+      </span>
+
+      <input type="submit" value="Upload your image" class="btn btn-primary" required>
+      </form>
+    </div>
+
+  </div>
+  </div><br>
+
+  </div><br>
+
+</body>
+
+</html>

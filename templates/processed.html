@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Style transfer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <h2 class="h2class">STYLE TRANSFER</h2>
+
+  <div class="container-fluid bg-3 text-center">
+
+    <div class="row">
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-4">
+        <h3 class="choose">Content image</h3>
+        <img src="../static/image/upload/content.jpg" class="col2" style="width:50%" alt="Image">
+      </div>
+      <div class="col-sm-4">
+        <h3 class="choose">Final styled image</h3>
+        <img src="../static/image/upload/target.jpg" class="col2" style="width:50%" alt="Image">
+      </div>
+      <div class="col-sm-2">
+      </div>
+
+    </div>
+    <br />
+    <br />
+
+  </div>
+
+</body>
+
+</html>
