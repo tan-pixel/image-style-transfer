@@ -3,6 +3,6 @@ Neural style transfer combines a style reference image (such as a piece of art b
 
 This is done by optimising the output image to match the style reference image's and the content image's statistics for both content and style. A convolutional network is used to extract these data from the images.
 
-![result_3 (1)](https://user-images.githubusercontent.com/82305551/215332568-38dd9966-90ad-4caf-8e8f-9ac88048c34e.jpg)
+<img src="https://user-images.githubusercontent.com/82305551/215335361-4978fedc-c05e-478f-b624-d8a662b4752c.jpg" width="500">
 
 This flask web app lets the user select from 4 different styles and apply them on an uploaded content image. This style transfer might take a few minutes, and is based on [this](https://arxiv.org/abs/1508.06576) paper.
